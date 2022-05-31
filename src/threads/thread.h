@@ -114,7 +114,7 @@ struct thread
     unsigned magic;                     /* Detects stack overflow. */
 
     /* ##> our implementation*/
-    int64_t sleep_ticks;                 /* For alarm-clock */
+    int64_t tick;                 /* For alarm-clock */
     /* Keep track of a thread's priority before a donation */
     int priority_original;
     /* For multiple donation */
